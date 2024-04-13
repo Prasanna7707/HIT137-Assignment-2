@@ -1,10 +1,1 @@
-0
-1
-2
-3
-4
-Condition met!
-5 not found in the dictionary!
-110
-{'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 10}
-{1, 2, 3, 4, 5}
+
