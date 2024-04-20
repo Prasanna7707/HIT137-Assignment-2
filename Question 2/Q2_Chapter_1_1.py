@@ -1,5 +1,4 @@
 import time
-
 def generate_number():
     current_time = int(time.time())
     generated_number = (current_time % 100) + 50
@@ -10,7 +9,6 @@ def generate_number():
     print(generated_number)
 
     return generated_number
-
 
 generate_number()
 
