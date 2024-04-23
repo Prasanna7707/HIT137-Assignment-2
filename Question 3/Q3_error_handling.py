@@ -44,23 +44,13 @@
 
 
 
-
-
-
-
-
-# Corrected the misspelling "Node" to "None".
-# Removed the argument passing to 'modify_dict' as it does not accept any arguments.
-# Changed 'not in' to 'not in my_dict.values()' to check for the value '5' in dictionary values.
-
 global_variable = 100
 my_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
 
-def process_numbers(numbers):  # Added the 'numbers' parameter to the function definition
+def process_numbers(numbers): 
     global global_variable
     local_variable = 5
-    numbers = list(numbers)  # Convert set to list since sets do not support indexing
-
+    numbers = list(numbers)  
     while local_variable > 0:
         if local_variable % 2 == 0:
             numbers.remove(local_variable)
@@ -68,29 +58,28 @@ def process_numbers(numbers):  # Added the 'numbers' parameter to the function d
 
     return numbers
 
-my_set = {1, 2, 3, 4, 5}  # Removed duplicate numbers since sets do not allow duplicates
-result = process_numbers(my_set)  # Corrected the function call to pass 'my_set' correctly
+my_set = {1, 2, 3, 4, 5}  
+result = process_numbers(my_set) 
 
 def modify_dict():
     local_variable = 10
     my_dict['key4'] = local_variable
 
-modify_dict()  # Removed the unnecessary argument '5'
+modify_dict()  
 
 def update_global():
     global global_variable
     global_variable += 10
 
-update_global()  # Added function call to 'update_global' to execute the function
+update_global()  
 
 for i in range(5):
     print(i)
-    # Removed 'i += 1' as it's unnecessary. The 'for' loop already increments 'i'.
 
-if my_set is not None and my_dict['key4'] == 10:  # Corrected the misspelling 'Node' to 'None'
+if my_set is not None and my_dict['key4'] == 10: 
     print("Condition met!")
 
-if '5' not in my_dict.values():  # Changed to check if the string '5' is not a value in my_dict
+if '5' not in my_dict.values():  
     print("5 not found in the dictionary!")
 
 print(global_variable)
